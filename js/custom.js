@@ -1,52 +1,28 @@
-
-  $(function () {
-
-    // MENU
-    $('.nav-link').on('click',function(){
-      $(".navbar-collapse").collapse('hide');
-    });
-
-
-    // AOS ANIMATION
+$(function () {
+  $(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  }),
     AOS.init({
-      disable: 'mobile',
+      disable: "mobile",
       duration: 800,
-      anchorPlacement: 'center-bottom'
-    });
-
-
-    // SMOOTH SCROLL
-    $(function() {
-      $('.nav-link').on('click', function(event) {
-        var $anchor = $(this);
-          $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 0
-          }, 1000);
-            event.preventDefault();
+      anchorPlacement: "center-bottom",
+    }),
+    $(function () {
+      $(".nav-link").on("click", function (e) {
+        var o = $(this);
+        $("html, body")
+          .stop()
+          .animate({ scrollTop: +$(o.attr("href")).offset().top }, 1e3),
+          e.preventDefault();
       });
-    });  
-
-
-    // PROJECT SLIDE
-    $('#project-slide').owlCarousel({
-      loop: true,
-      center: true,
-      autoplayHoverPause: false,
-      autoplay: true,
+    }),
+    $("#project-slide").owlCarousel({
+      loop: !0,
+      center: !0,
+      autoplayHoverPause: !1,
+      autoplay: !0,
       margin: 30,
-      responsiveClass:true,
-      responsive:{
-          0:{
-              items:1,
-          },
-          768:{
-              items:2,
-          }
-      }
+      responsiveClass: !0,
+      responsive: { 0: { items: 1 }, 768: { items: 2 } },
     });
-
-  });
-
-
-    
-
+});
