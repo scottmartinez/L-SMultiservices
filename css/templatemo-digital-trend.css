@@ -2,9 +2,12 @@ h2,
 h3 {
   font-weight: 100;
 }
-.custom-btn.btn-bg,
+
 body {
-  background: var(--white-color);
+  background: var(--project-bg);
+}
+.custom-btn.btn-bg{
+  background: #25D366;
 }
 .about,
 .blog-header,
@@ -165,7 +168,7 @@ blockquote {
 }
 .custom-btn:focus,
 .custom-btn:hover {
-  background: var(--dark-color);
+  background:#128C7E ;
   color: var(--white-color);
   border-color: transparent;
 }
@@ -192,10 +195,10 @@ a:hover {
   color: var(--white-color);
 }
 .section-padding {
-  padding: 8em 0;
+  padding: 2em 0;
 }
 .section-padding-half {
-  padding: 4em 0;
+  padding: 1em 0;
 }
 .google-map iframe {
   display: block;
@@ -207,7 +210,7 @@ a:hover {
   top: 0;
   right: 0;
   left: 0;
-  padding: 1.5em;
+  padding: 1.0em;
 }
 .navbar-brand {
   color: var(--white-color);
@@ -232,7 +235,7 @@ a:hover {
   padding-left: 0;
 }
 .navbar-expand-lg .navbar-nav .nav-link.contact {
-  border: 2px solid var(--secondary-color);
+  border: .3px solid var(--secondary-color);
   border-radius: var(--border-radius-large);
   color: var(--secondary-color);
   font-family: var(--font-bold-family);
