@@ -49,20 +49,20 @@ a {
 }
 :root {
   --primary-color: #053b8d;
-  --secondary-color: #854100;
+  --secondary-color: #FF850F;
   --white-color: #ffffff;
   --dark-color: #171819;
   --project-bg: #f0f8ff;
   --menu-bg: #1c7cd6;
   --title-color: #15141a;
-  --gray-color: #909090;
+  --gray-color: #eee4e4;
   --link-color: #404040;
-  --p-color: #666262;
+  --p-color: #e7e7e7;
   --base-font-family: "Plain-Light", sans-serif;
   --title-font-family: "Plain-Regular", sans-serif;
   --font-bold-family: "Plain-Bold", sans-serif;
   --font-weight-bold: bold;
-  --h1-font-size: 42px;
+  --h1-font-size: 40px;
   --h2-font-size: 32px;
   --h3-font-size: 24px;
   --p-font-size: 18px;
@@ -145,6 +145,9 @@ strong {
 .project-info small,
 .project-wrapper {
   position: relative;
+}
+.acerca_de{
+  color: var(--dark-color);
 }
 blockquote {
   border-left: 5px solid rgba(0, 0, 0, 0.05);
@@ -235,9 +238,10 @@ a:hover {
   padding-left: 0;
 }
 .navbar-expand-lg .navbar-nav .nav-link.contact {
-  border: .3px solid var(--secondary-color);
+  border: .0px solid var(--secondary-color);
   border-radius: var(--border-radius-large);
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  background-color: #25D366;
   font-family: var(--font-bold-family);
   padding: 0.6em 2em 0.8em;
 }
@@ -330,10 +334,11 @@ a:hover {
   left: 32px;
   width: 90%;
   padding: 32px;
+  opacity: 85%;
 }
 .project-info small {
   font-family: Plain-Bold;
-  color: var(--gray-color);
+  color: var(--dark-color);
   top: 2px;
 }
 .project-info a {
